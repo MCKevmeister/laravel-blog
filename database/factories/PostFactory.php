@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Category;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Comment;
 
 class PostFactory extends Factory
 {
@@ -24,4 +25,5 @@ class PostFactory extends Factory
             'body' => '<p>' . implode('</p><p>', $this->faker->paragraphs(6)) . '</p>'
         ];
     }
+
 }
